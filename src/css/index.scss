@@ -1,0 +1,120 @@
+//variables -----------------------------/
+$primary-font-stack: 'Nosifer', 'Arial Black', 'Copperplate';
+$secondary-font-stack: 'Rajdhani', 'Lucida Console', 'Trebuchet MS';
+$primary-font-color: #BD2E2E;
+$secondary-font-color: #fff;
+$background-color: rgba(31, 31, 31, 0.8);
+
+//mixins --------------------------------/
+
+
+//helpers -------------------------------/
+
+
+//loops ---------------------------------/
+
+
+//function ------------------------------/
+
+
+//main page css ------------------------------/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  .game-ui {
+    width: 95%;
+    margin: 0 auto;
+    h1 {
+      padding: .5em 0 .25em 0;
+      font-family: $primary-font-stack;
+      color: $primary-font-color;
+    }
+    h2 {
+      font-family: $secondary-font-stack;
+      font-size: 1.2em;
+      color: $primary-font-color;
+    }
+  }
+  h1, h2 {
+    text-align: center;
+    margin: 0;
+  }
+  .details {
+    display: flex;
+    padding: .1em;
+    align-items: center;
+    font-family: $secondary-font-stack;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    padding: 0;
+  }
+  li {
+    flex: 1;
+    text-align: left;
+  }
+  ul li {
+    color: $secondary-font-color;
+  }
+  button.toggle-darkness {
+    border-radius: 5px;
+    background-color: #FA0F0F;
+    box-shadow: inset 0 0 5px #B92525;
+    box-shadow: 1px 1px 1px #2B2B2B;
+    border: 1px solid #BD2E2E;
+    padding: 0;
+    height: 35px;
+    span {
+      color: $secondary-font-color;
+      padding: 5px 4px;
+    }
+    &:hover {
+      background-color: #C62F2F;
+      cursor: pointer;
+    }
+    &:active {
+      background-color: #FA0F0F;
+    }
+  }
+}
+
+html {
+  background-color: $background-color;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+  padding-bottom: 2em;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  div {
+    float: left;
+    display: inline-block;
+    background-color: #000;
+    height: 12px;
+    width: 12px;
+  }
+  .dark {
+    background-color: #2E2E2E;
+  }
+  .wall {
+    background-color: #707070;
+  }
+}
+
+
+
+// .map-background {
+//   background-color: #626262;
+// }
